@@ -1,0 +1,9 @@
+git clone https://mabhar@del.tools.publicis.sapient.com/bitbucket/scm/sk/kairos_initial.git --branch feature/Release-1.2/Base-Commerce/SK-01JUN --single-branch /e/Siemens/BGS-COMMERCE/SK-01JUN
+
+XT Templates
+http://kairosci.sapient.com/trackrepo/?dir=XT
+
+
+
+
+git clone https://mabhar@del.tools.publicis.sapient.com/bitbucket/scm/sk/kairos_initial.git --branch feature/Release-1.2/BGS-COM/ElasticSearchAPI --single-branch /e/Siemens/BGS-COMMERCE/ElasticSearchAPI

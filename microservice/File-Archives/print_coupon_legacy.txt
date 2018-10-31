@@ -1,0 +1,46 @@
+<script src="/_assets/global/js/thirdparty/coupon/bcmath-min.js"></script>
+	<script src="/_assets/global/js/thirdparty/coupon/pdf417-min.js"></script>
+
+	<script>
+		var $couponImageWrap = document.getElementsByClassName('couponImageWrap')[0];
+
+		generate_pdf('71900051234566627077', $couponImageWrap);
+
+		function generate_pdf(barcode, target)
+		{
+			var
+				canvas = document.createElement('canvas'),
+				textNode = document.createTextNode(barcode),
+				bw = 3, bh = 3, y = 0, r = 0, c = 0,
+				barcode, ctx;
+
+			PDF417.init(barcode);
+			barcode = PDF417.getBarcodeArray();
+
+			canvas.width = bw * barcode['num_cols'];
+			canvas.height = bh * barcode['num_rows'];
+			ctx = canvas.getContext('2d');
+
+			for ( r = 0; r < barcode['num_rows']; ++r )
+			{
+				var x = 0;
+				for ( c = 0; c < barcode['num_cols']; ++c )
+				{
+				  if (barcode['bcode'][r][c] == 1)
+				  {
+				    ctx.fillRect(x, y, bw, bh);
+				  }
+				  x += bw;
+				}
+				y += bh;
+			}
+			//target.appendChild(canvas);
+			var image = new Image(310,100);
+			image.src = canvas.toDataURL("image/png");
+			target.appendChild(image);
+			target.appendChild(textNode);
+		}
+	</script>
+
+
+	<link rel="stylesheet" type="text/css" href="/_assets/global/css/print_coupon.css">
