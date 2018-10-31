@@ -1,0 +1,16 @@
+
+squid:UselessImportCheck
+"WRemove this unused import 'org.springframework.kafka.core.DefaultKafkaProducerFactory'.(Û«Ë»ûÿÿÿÿ8Ìï´ ì,HœRMINORZ
+CODE_SMELL
+Œsquid:UselessImportCheck"KRemove this unused import 'org.springframework.kafka.core.ProducerFactory'.(­Ùèò8Ìï´ ì,HRMINORZ
+CODE_SMELL
+psquid:UselessImportCheck"*Remove this unused import 'java.util.Map'.(¼è½Òşÿÿÿÿ8Ìï´ ì,HRMINORZ
+CODE_SMELL
+”squid:UselessImportCheck"SRemove this unused import 'org.apache.kafka.common.serialization.StringSerializer'.(Ş ¾ş8Ìï´ ì,HŸRMINORZ
+CODE_SMELL
+tsquid:UselessImportCheck".Remove this unused import 'java.util.HashMap'.(™˜”€ùÿÿÿÿ8Ìï´ ì,H RMINORZ
+CODE_SMELL
+‰squid:UselessImportCheck	"HRemove this unused import 'org.springframework.context.annotation.Bean'.(‚î‰Ş8Ìï´ ì,H¡RMINORZ
+CODE_SMELL
+squid:UselessImportCheck"MRemove this unused import 'org.apache.kafka.clients.producer.ProducerConfig'.(ıä¢ó8Ìï´ ì,H¢RMINORZ
+CODE_SMELL

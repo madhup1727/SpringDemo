@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="adminclient"/>
+<aop-project name="adminserver"/>
+<aop-project name="microservice"/>
+<aop-project name="zuulserver"/>
+<aop-project name="kafka"/>
+<aop-project name="eurekaserver"/>
+<aop-project name="configserver"/>
+</aop-reference-model>

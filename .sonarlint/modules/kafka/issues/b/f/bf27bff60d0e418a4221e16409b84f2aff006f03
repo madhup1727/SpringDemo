@@ -1,0 +1,32 @@
+
+m
+squid:S106ª"9Replace this use of System.out or System.err by a logger.(•‘ÉØ8ÎÊÇûë,HùRMAJORZ
+CODE_SMELL
+r
+squid:S106Œ"9Replace this use of System.out or System.err by a logger.(ÁÜÖ¦ÿÿÿÿÿ8åö‚Ÿì,HƒRMAJORZ
+CODE_SMELL
+l
+squid:S106±"9Replace this use of System.out or System.err by a logger.(ğ‹’$8­ı¢ ì,H’RMAJORZ
+CODE_SMELL
+m
+squid:S106"9Replace this use of System.out or System.err by a logger.(•ğÒ8ÎÊÇûë,HúRMAJORZ
+CODE_SMELL
+p
+squid:S899/":Do something with the "boolean" value returned by "await".(³ğİÁ8Ùˆßûë,HûRMINORZVULNERABILITY
+m
+squid:S106’"9Replace this use of System.out or System.err by a logger.(š§çã8ÎÊÇûë,HóRMAJORZ
+CODE_SMELL
+r
+squid:S106¤"9Replace this use of System.out or System.err by a logger.(éùúäıÿÿÿÿ8ÎÊÇûë,H÷RMAJORZ
+CODE_SMELL
+r
+squid:S106˜"9Replace this use of System.out or System.err by a logger.(ÇƒËãøÿÿÿÿ8ÎÊÇûë,HöRMAJORZ
+CODE_SMELL
+squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(˜ù8…±é¢ì,H¤RMAJORZ
+CODE_SMELL
+„squid:CommentedOutCodeLine7"<This block of commented-out lines of code should be removed.(‹¾«Ïøÿÿÿÿ8…±é¢ì,H¥RMAJORZ
+CODE_SMELL
+„squid:CommentedOutCodeLine@"<This block of commented-out lines of code should be removed.(éóÛÕøÿÿÿÿ8…±é¢ì,H¦RMAJORZ
+CODE_SMELL
+squid:CommentedOutCodeLineI"<This block of commented-out lines of code should be removed.(«é§¯8…±é¢ì,H§RMAJORZ
+CODE_SMELL

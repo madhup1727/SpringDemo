@@ -1,0 +1,3 @@
+
+¡"squid:ClassVariableVisibilityCheck"NMake id a static final constant or non-public and provide accessors if needed.(ÍéÌ‘øÿÿÿÿ8˜±¿ß,H›RMINORZVULNERABILITY
+¤"squid:ClassVariableVisibilityCheck"WMake displayName a static final constant or non-public and provide accessors if needed.(×Óìu8˜±¿ß,HœRMINORZVULNERABILITY

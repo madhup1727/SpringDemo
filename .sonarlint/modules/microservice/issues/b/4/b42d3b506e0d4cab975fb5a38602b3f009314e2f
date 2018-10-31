@@ -1,0 +1,33 @@
+
+q
+squid:S106)"9Replace this use of System.out or System.err by a logger.(ò÷ãñúÿÿÿÿ8ò¾å½ß,H¦RMAJORZ
+CODE_SMELL
+l
+squid:S106"9Replace this use of System.out or System.err by a logger.(Å³Ì¾8¥É½ß,H§RMAJORZ
+CODE_SMELL
+l
+squid:S106"9Replace this use of System.out or System.err by a logger.(…§ò8ìÅĞ¼ß,H¨RMAJORZ
+CODE_SMELL
+k
+squid:S106"9Replace this use of System.out or System.err by a logger.(ïºŸ[8ìÅĞ¼ß,H©RMAJORZ
+CODE_SMELL
+¥squid:UselessImportCheck"dRemove this unused import 'guru.springframework.blog.componentscan.example.demopackageB.DemoBeanB3'.(·Ñ‚­8›¦½ß,HªRMINORZ
+CODE_SMELL
+qsquid:S1197"8Move the array designator from the variable to the type.(¡şÏÖøÿÿÿÿ8¯É¼ß,H«RMINORZ
+CODE_SMELL
+©squid:UselessImportCheck"cRemove this unused import 'guru.springframework.blog.componentscan.example.demopackageB.DemoBeanB'.(·üÿÿÿÿÿ8Æ‹º½ß,H¬RMINORZ
+CODE_SMELL
+q
+squid:S106"9Replace this use of System.out or System.err by a logger.(òôóùÿÿÿÿ8è˜í¼ß,H­RMAJORZ
+CODE_SMELL
+©squid:UselessImportCheck"cRemove this unused import 'guru.springframework.blog.componentscan.example.demopackageA.DemoBeanA'.(°ÚÖçùÿÿÿÿ8¥ª†½ß,H®RMINORZ
+CODE_SMELL
+k
+squid:S106"9Replace this use of System.out or System.err by a logger.(µĞâU8ìÅĞ¼ß,H¯RMAJORZ
+CODE_SMELL
+q
+squid:S106#"9Replace this use of System.out or System.err by a logger.(¶„èÖûÿÿÿÿ8²Ìß½ß,H°RMAJORZ
+CODE_SMELL
+q
+squid:S106"9Replace this use of System.out or System.err by a logger.(çîÔÂÿÿÿÿÿ8ìÅĞ¼ß,H±RMAJORZ
+CODE_SMELL

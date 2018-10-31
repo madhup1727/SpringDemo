@@ -1,0 +1,135 @@
+package com.example.demo.controller;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import org.slf4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboard;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+
+
+import com.example.demo.exception.ProductNotFound;
+import  com.example.demo.model.*;
+import com.example.demo.service.ProductService;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
+import com.netflix.ribbon.proxy.annotation.Hystrix;
+
+
+@RestController
+@EnableHystrixDashboard
+public class ProductServiceController {
+	
+	private static Map<Integer, Product> productRepo = new HashMap<>();
+	
+	@Autowired	
+	@Value("${welcome.message}")
+	String welcomeText;
+
+	
+	static {
+		Product p1 = new Product();
+		p1.setId(1);
+		p1.setDisplayName("1");
+		productRepo.put(p1.getId(), p1);
+		
+		Product p2 = new Product();
+		p2.setId(2);
+		p2.setDisplayName("2");
+		productRepo.put(p2.getId(), p2);
+	}
+	
+	@Autowired
+	ProductService productService;
+	
+	/**
+	 * Get All
+	 * @return
+	 */
+	@RequestMapping("/products")
+	public ResponseEntity<Object> getProducts() {
+		return new ResponseEntity<Object>(productService.getProduct(),HttpStatus.OK);
+	}
+	
+	/**
+	 * Insert
+	 * @param product
+	 * @return
+	 */
+	
+	@PostMapping(value = "/products", consumes = MediaType.APPLICATION_JSON_VALUE,produces = MediaType.APPLICATION_JSON_VALUE)
+	public ResponseEntity<Object> createProducts(@RequestBody Product product ) {
+		productRepo.put(product.getId(), product);
+		return new ResponseEntity<Object>(productRepo.values(),HttpStatus.CREATED);
+	}
+	
+	/**
+	 * Update
+	 * @param id
+	 * @return
+	 */
+	@RequestMapping(value = "/products/{id}", method=RequestMethod.PUT)
+	public ResponseEntity<Object> updateProduct(@PathVariable ("id") String id, @RequestBody Product product) {
+
+		if (!productRepo.containsKey(Integer.parseInt(id))) {
+			throw new ProductNotFound();
+		}
+		productRepo.remove(id);
+		productRepo.put(product.getId(), product);
+		return new ResponseEntity<Object>(productRepo.values(),HttpStatus.CREATED);
+	
+	}
+	
+	@RequestMapping(value="/products/{id}", method=RequestMethod.DELETE)
+	public ResponseEntity<Object> deleteProduct(@PathVariable("id") String id)
+	{
+		System.out.println("Inside Delete"  + id);
+		System.out.println("Current Product Repo" + productRepo.toString());
+		productRepo.remove(Integer.parseInt(id));
+		System.out.println("Current Product After Delete" +  productRepo.toString());
+		return new ResponseEntity<Object>(productRepo.values(),HttpStatus.OK);
+	}
+	
+	
+	@RequestMapping("/config-server")
+	public String getConfigProperties() {
+		return "READING from config server" + welcomeText;
+	}
+	
+	
+	/**
+	 * Testing Hystrix
+	 * @return
+	 * @throws InterruptedException 
+	 */
+	
+	
+	@RequestMapping("/hystrix")
+	@HystrixCommand(fallbackMethod = "fallback_hello", commandProperties = {@HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "1000")})
+	public String getHystrix() throws InterruptedException {
+		Thread.sleep(3000);
+		return "Hystrix Response";
+	}
+	
+	private String fallback_hello() {
+		return "Request fails. It takes long time to response";
+	}
+	
+	
+	 
+	
+
+}

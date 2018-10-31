@@ -1,0 +1,11 @@
+
+šsquid:S1488:"fImmediately return this expression instead of assigning it to the temporary variable "responseEntity".(…ÕÙ‡8’¹Ìáà,HêRMINORZ
+CODE_SMELL
+_squid:S1148'"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8è¬ùàà,H½RMINORZVULNERABILITY
+_squid:S1148 "#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8—öàà,H·RMINORZVULNERABILITY
+‚squid:UselessImportCheck	"ARemove this unused import 'javax.validation.metadata.MethodType'.(Û½™ş8—öàà,H¶RMINORZ
+CODE_SMELL
+nsquid:S2259#"AA "NullPointerException" could be thrown; "fos" is nullable here.(ÎÚ«Ç8è¬ùàà,H¼RMAJORZBUG
+zsquid:S10751"ARefactor your code to get this URI from a customizable parameter.(úœíæüÿÿÿÿ8’¹Ìáà,HéRMINORZ
+CODE_SMELL
+hsquid:S2095"4Close this "FileOutputStream" in a "finally" clause.(À¥Ğıÿÿÿÿ8—öàà,H´RBLOCKERZBUG

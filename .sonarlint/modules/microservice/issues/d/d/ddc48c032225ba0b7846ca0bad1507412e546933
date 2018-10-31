@@ -1,0 +1,7 @@
+
+„squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(²¿¨üÿÿÿÿ8‘ò¤‹â,H RMAJORZ
+CODE_SMELL
+squid:CommentedOutCodeLine7"<This block of commented-out lines of code should be removed.(» ŽÍ8éÿ¦‹â,H¡RMAJORZ
+CODE_SMELL
+¨squid:UselessImportCheck"gRemove this unused import 'org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboard'.(¹ŸÒŠ8¿Ýûë,H¢RMINORZ
+CODE_SMELL
