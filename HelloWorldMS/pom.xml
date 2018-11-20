@@ -15,7 +15,7 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.0.6.RELEASE</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 
 	<properties>
@@ -37,30 +37,49 @@
 		</dependency>
 	</dependencies>
 
+	<!-- <build> <plugins> <plugin> <groupId>org.springframework.boot</groupId> 
+		<artifactId>spring-boot-maven-plugin</artifactId> </plugin> <plugin> <groupId>com.spotify</groupId> 
+		<artifactId>dockerfile-maven-plugin</artifactId> <version>1.4.8</version> 
+		<configuration> <repository>madhup1727/helloworld</repository> <tag>${project.version}</tag> 
+		<pullNewerImage>false</pullNewerImage> <buildArgs> <JAR_FILE>target/${project.build.finalName}.jar</JAR_FILE> 
+		</buildArgs> </configuration> <executions> <execution> <id>default</id> <phase>install</phase> 
+		<goals> <goal>build</goal> <goal>push</goal> </goals> </execution> </executions> 
+		</plugin> </plugins> </build> -->
+
 	<build>
 		<plugins>
 			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-			<plugin>
-				<groupId>com.spotify</groupId>
-				<artifactId>dockerfile-maven-plugin</artifactId>
-				<version>1.4.0</version>
+				<groupId>io.fabric8</groupId>
+				<artifactId>docker-maven-plugin</artifactId>
+				<version>0.16.7</version>
 				<configuration>
-					<repository>madhup1727/helloworld</repository>
-					<tag></tag>
-					<pullNewerImage>false</pullNewerImage>
-					<buildArgs>
-						<JAR_FILE>target/${project.build.finalName}.jar</JAR_FILE>
-					</buildArgs>
+					<archive>
+			          <manifest>
+			            <addClasspath>true</addClasspath>
+			            <classpathPrefix>lib/</classpathPrefix>
+			            <mainClass>com.example.HelloWorldMsApplication</mainClass>
+			          </manifest>
+	        		</archive>
+					<images>
+						<image>
+							<name>madhup1727/helloworld:${project.version}</name>
+							<build>
+								<dockerFileDir>${project.basedir}</dockerFileDir>
+							</build>
+						</image>
+					</images>
+					<authConfig>
+						<username>madhup1727</username>
+						<password>716658</password>
+					</authConfig>
 				</configuration>
 				<executions>
 					<execution>
-						<id>default</id>
-						<phase>install</phase>
+						<id>push</id>
+						<phase>post-integration-test</phase>
 						<goals>
-							<goal>build</goal>
+							<goal>stop</goal>
+							<goal>repackage</goal>
 							<goal>push</goal>
 						</goals>
 					</execution>

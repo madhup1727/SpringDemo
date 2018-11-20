@@ -63,3 +63,5 @@ r
 Bsrc/main/java/com/example/demo/interceptor/ProductInterceptor.java,9\8\986e973826a5b384af19cb8b1e41adfbee8c2a42
 s
 Csrc/main/java/com/example/demo/interceptor/InterceptorRegistry.java,7\4\7424e35e5c58a4ba797a547b9663034a0222a371
+p
+@src/test/java/com/example/demo/MicroserviceApplicationTests.java,7\2\72cf0eca6fccb9c6eb4e130a6efedcf93aa56729

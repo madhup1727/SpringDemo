@@ -1,0 +1,6 @@
+server.port=8888
+
+spring.cloud.config.server.native.searchLocations=file:///E:/BBB-FEO/SpringDemo/configprop/
+#spring.cloud.config.server.git.uri=https://github.com/madhup1727/SpringDemo/configprop/
+#spring.cloud.config.server.git.skip-ssl-validation=true
+spring.profiles.active=native

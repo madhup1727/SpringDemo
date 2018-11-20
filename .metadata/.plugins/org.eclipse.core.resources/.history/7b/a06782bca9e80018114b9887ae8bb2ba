@@ -1,0 +1,28 @@
+server.port= 8080
+spring.application.name=microservice-api
+
+
+
+logging.file=microservice-demo.log
+
+
+#spring.cloud.config.uri=http://localhost:8888
+spring.cloud.config.uri=http://35.243.154.204:80
+
+spring.boot.admin.client.url=http://localhost:9999
+
+management.security.enabled=false
+management.endpoints.web.exposure.include=*
+info.app.name=Spring Sample Application
+info.app.description=This is my first spring boot application
+info.app.version=1.0.0
+
+#Configurations for running on HTTPS
+#server.port: 443
+#server.ssl.key-store: keystore.p12
+#server.ssl.key-store-password: springboot
+#server.ssl.keyStoreType: PKCS12
+#server.ssl.keyAlias: tomcat
+
+#Command for Generating Keystore File
+#keytool -genkey -alias tomcat -storetype PKCS12 -keyalg RSA -keysize 2048 -keystore keystore.p12 -validity 3650

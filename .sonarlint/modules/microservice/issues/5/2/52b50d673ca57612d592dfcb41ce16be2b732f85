@@ -1,32 +1,32 @@
 
-’squid:S2293\"YReplace the type specification in this constructor call with the diamond operator ("<>").(ëÉïˆıÿÿÿÿ8„å•âà,H¼RMINORZ
+msquid:UselessImportCheck"-Remove this unused import 'org.slf4j.Logger'.(íØ®68ï°ñÀß,H—RMINORZ
 CODE_SMELL
-ˆsquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ï€¡ûÿÿÿÿ8ìÀÃôë,H½RMINORZ
+˜squid:UselessImportCheck"RRemove this unused import 'org.springframework.web.bind.annotation.DeleteMapping'.(­ìÎªşÿÿÿÿ8ÊšÛáà,H˜RMINORZ
 CODE_SMELL
-ssquid:S3400€"9Remove this method and declare a constant for this value.(€ƒÒúÿÿÿÿ8ìÀÃôë,H¾RMINORZ
+ˆsquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ï€¡ûÿÿÿÿ8ìÀÃôë,H™RMINORZ
 CODE_SMELL
-msquid:UselessImportCheck"-Remove this unused import 'org.slf4j.Logger'.(íØ®68ï°ñÀß,H¿RMINORZ
-CODE_SMELL
-’squid:S2293@"YReplace the type specification in this constructor call with the diamond operator ("<>").(ûçèİÿÿÿÿÿ8ÊšÛáà,HÀRMINORZ
-CODE_SMELL
-k
-squid:S106f"9Replace this use of System.out or System.err by a logger.(ôü8ÊšÛáà,HÁRMAJORZ
-CODE_SMELL
-zsquid:UnusedPrivateMethod"3Remove this unused private "fallback_hello" method.(Ï€¡ûÿÿÿÿ8ìÀÃôë,HÂRMAJORZ
+•squid:UselessImportCheck"ORemove this unused import 'org.springframework.web.bind.annotation.PutMapping'.(›¥÷ˆûÿÿÿÿ8ÊšÛáà,HšRMINORZ
 CODE_SMELL
 l
-squid:S106c"9Replace this use of System.out or System.err by a logger.(ÂÜÚı8ÊšÛáà,HÃRMAJORZ
+squid:S106c"9Replace this use of System.out or System.err by a logger.(ÂÜÚı8ÊšÛáà,H›RMAJORZ
 CODE_SMELL
-¨squid:UselessImportCheck	"gRemove this unused import 'org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboard'.(¹ŸÒŠ8ìÀÃôë,HÄRMINORZ
+squid:S2293g"YReplace the type specification in this constructor call with the diamond operator ("<>").(šìÊ§8ÊšÛáà,HœRMINORZ
 CODE_SMELL
-squid:S2293g"YReplace the type specification in this constructor call with the diamond operator ("<>").(šìÊ§8ÊšÛáà,HÅRMINORZ
+zsquid:UnusedPrivateMethod"3Remove this unused private "fallback_hello" method.(Ï€¡ûÿÿÿÿ8ìÀÃôë,HRMAJORZ
+CODE_SMELL
+’squid:S2293@"YReplace the type specification in this constructor call with the diamond operator ("<>").(ûçèİÿÿÿÿÿ8ÊšÛáà,HRMINORZ
 CODE_SMELL
 q
-squid:S106d"9Replace this use of System.out or System.err by a logger.(¤½¬ßşÿÿÿÿ8ÊšÛáà,HÆRMAJORZ
+squid:S106d"9Replace this use of System.out or System.err by a logger.(¤½¬ßşÿÿÿÿ8ÊšÛáà,HŸRMAJORZ
 CODE_SMELL
-’squid:S2293L"YReplace the type specification in this constructor call with the diamond operator ("<>").(ëÉïˆıÿÿÿÿ8ÈîˆÀß,HÇRMINORZ
+¨squid:UselessImportCheck	"gRemove this unused import 'org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboard'.(¹ŸÒŠ8ìÀÃôë,H RMINORZ
 CODE_SMELL
-•squid:UselessImportCheck"ORemove this unused import 'org.springframework.web.bind.annotation.PutMapping'.(›¥÷ˆûÿÿÿÿ8ÊšÛáà,HÈRMINORZ
+’squid:S2293\"YReplace the type specification in this constructor call with the diamond operator ("<>").(ëÉïˆıÿÿÿÿ8„å•âà,H¡RMINORZ
 CODE_SMELL
-˜squid:UselessImportCheck"RRemove this unused import 'org.springframework.web.bind.annotation.DeleteMapping'.(­ìÎªşÿÿÿÿ8ÊšÛáà,HÉRMINORZ
+k
+squid:S106f"9Replace this use of System.out or System.err by a logger.(ôü8ÊšÛáà,H¢RMAJORZ
+CODE_SMELL
+’squid:S2293L"YReplace the type specification in this constructor call with the diamond operator ("<>").(ëÉïˆıÿÿÿÿ8ÈîˆÀß,H£RMINORZ
+CODE_SMELL
+ssquid:S3400€"9Remove this method and declare a constant for this value.(€ƒÒúÿÿÿÿ8ìÀÃôë,H¤RMINORZ
 CODE_SMELL

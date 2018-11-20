@@ -24,19 +24,19 @@ import org.springframework.web.client.RestTemplate;
 //import org.slf4j.Logger;
 //import org.slf4j.LoggerFactory;
 
-import org.springframework.cloud.client.discovery.DiscoveryClient;
+//import org.springframework.cloud.client.discovery.DiscoveryClient;
 
 @SpringBootApplication
 @RestController
 @EnableScheduling
-@EnableDiscoveryClient
+//@EnableDiscoveryClient
 @EnableHystrix
 public class MicroserviceApplication {
 	
 	private static final Logger LOG = Logger.getLogger(MicroserviceApplication.class.getName());
 	
-	@Autowired
-    private DiscoveryClient discoveryClient;
+	//@Autowired
+    //private DiscoveryClient discoveryClient;
 
 	@Value("${server.port}")
 	public String port;
