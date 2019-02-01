@@ -50,8 +50,7 @@
                         <image>
                             <name>madhup1727/helloworld-fabric8</name>
                             <build>
-                            	<dockerFileDir>.</dockerFileDir>
-                                <dockerFile>Dockerfile</dockerFile>
+                            	<dockerFileDir>${project.basedir}/.</dockerFileDir>
                                 <assembly>
                                     <descriptorRef>artifact</descriptorRef>
                                 </assembly>

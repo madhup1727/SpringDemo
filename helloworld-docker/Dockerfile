@@ -11,8 +11,11 @@ VOLUME /tmp
 EXPOSE 8080
 
 # The application's jar file
-ARG JAR_FILE=target/HelloWorld-0.0.1-SNAPSHOT.jar
-						
+#ARG JAR_FILE=target/HelloWorld-0.0.1-SNAPSHOT.jar
+
+#when using fabric8 POM plugin this is path of JAR						
+ARG JAR_FILE=maven/HelloWorld-0.0.1-SNAPSHOT.jar
+
 
 # Add the application's jar to the container
 ADD ${JAR_FILE} HelloWorldMS.jar
