@@ -15,6 +15,6 @@ public class HelloWorldMsApplication {
 	
 	@RequestMapping("/helloWorld")
 	public String helloWorld () {
-		return "Hello World,running in Spring boot application";
+		return "Hello World,running in Spring boot application. This app has been deployed on docker using maven fabric-8 plugin.";
 	}
 }
